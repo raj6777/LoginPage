@@ -54,11 +54,11 @@ class _MyHomePageState extends State<MyHomePage> {
               padding:EdgeInsets.all(15),
               child: TextField(
                 decoration: InputDecoration(
-                  icon: Icon(Icons.account_box,size: 50,),
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20),)
-                  ),
-                  labelText: "username",
+                  //icon: Icon(Icons.account_box,size: 50,),
+                  //border: OutlineInputBorder(
+                     // borderRadius: BorderRadius.all(Radius.circular(20),)
+                  //),
+                  labelText: "Username/email/phone no.",
                   hintStyle: TextStyle(color: Colors.indigo),
                   hintText: "Enter your Name",
                 ),
@@ -69,14 +69,15 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               padding:EdgeInsets.all(15),
               child: TextField(
+                obscureText: true,
                 decoration: InputDecoration(
-                  icon: Icon(Icons.vpn_key_outlined,size: 50,),
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20))
-                  ),
-                  labelText: "password",
-                  hintStyle: TextStyle(color: Colors.indigo),
+                  //icon: Icon(Icons.vpn_key_outlined,size: 50,),
+                  //border: OutlineInputBorder(
+                      //borderRadius: BorderRadius.all(Radius.circular(20))
+                  //),
+                  labelText: "Password",
                   hintText: "Enter your password",
+                  hintStyle: TextStyle(color: Colors.indigo),
                 ),
 
               ),
@@ -84,8 +85,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               alignment: Alignment.bottomRight,
               padding: EdgeInsets.all(10),
-              child: Text("Forgot Password",
-                style: TextStyle(fontSize: 15,color: Colors.indigo),
+              child: Text("Forgot Password?",
+                style: TextStyle(fontSize: 15,color: Colors.indigo,fontWeight: FontWeight.bold),
               ),
             ),
             Container(
