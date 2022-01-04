@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 30,
               width:60,
             ),
             Center(
@@ -182,6 +182,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
         ),
             ),
+            SizedBox(
+              height: 30,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -190,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text("Don't have an account yet?",
                     style: TextStyle(fontSize: 15),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 5),
                   FlatButton(
                     textColor: Colors.white,
                     color: Colors.transparent,
