@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login/signup/signup.dart';
 void main() {
   runApp(MyApp());
 }
@@ -198,10 +199,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   FlatButton(
                     textColor: Colors.white,
                     color: Colors.transparent,
-                    child: Text('Login',
+                    child: Text('SignUp',
                     style: TextStyle(color: Colors.indigo,
                     ),),
-                    onPressed: () {
+                    onPressed:() {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp(),));
                     },
                   ),
               ],
